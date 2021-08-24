@@ -1,0 +1,15 @@
+from configparser import ConfigParser
+
+config = ConfigParser()
+config.read('config.ini')
+MENU_X = int(config.get('MENU', 'X'))
+MENU_Y = int(config.get('MENU', 'Y'))
+PRIMARY_X = int(config.get('PRIMARY', 'X'))
+PRIMARY_Y = int(config.get('PRIMARY', 'Y'))
+CONNECT_X = int(config.get('CONNECT', 'X'))
+CONNECT_Y = int(config.get('CONNECT', 'Y'))
+INPUT_X = int(config.get('INPUT', 'X'))
+INPUT_Y = int(config.get('INPUT', 'Y'))
+BUTTON_X = int(config.get('BUTTON', 'X'))
+BUTTON_Y = int(config.get('BUTTON', 'Y'))
+TOKEN = config.get('TOKEN', 'value')
